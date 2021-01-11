@@ -21,11 +21,5 @@ module.exports = class ContactController {
       console.log(users)
     return res.json(users);
   }
-//   static getContacts() {
-//     fsPromises
-//       .readFile(contactsPath, 'utf-8')
-//         .then(result => JSON.parse(result))
-//         .then((req, res, next)=>{return res.json()})
-//       .catch(error => console.log(error));
-//   }
+
 };

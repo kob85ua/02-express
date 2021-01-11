@@ -16,7 +16,7 @@ function writeJson(pathToFile, data) {
 function listContacts() {
   fsPromises
     .readFile(contactsPath, 'utf-8')
-    .then(results => {return console.table(JSON.parse(results))})
+    .then(results => {return JSON.parse(results)})
     .catch(error => console.log(error));
 }
 
